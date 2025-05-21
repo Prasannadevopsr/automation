@@ -14,3 +14,12 @@ provider "azurerm" {
   #resource_provider_registrations = "none" # This is only required when the User, Service Principal, or Identity running Terraform lacks the permissions to register Azure Resource Providers.
   features {}
 }
+
+terraform {
+  backend "azurerm" {
+    resource_group_name  = "tfstate-rg"
+    storage_account_name = "tfstatebackend987123"
+    container_name       = "tfstate"
+    key                  = "terraform.tfstate"
+  }
+}
