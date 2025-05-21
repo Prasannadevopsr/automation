@@ -1,5 +1,5 @@
-# Create a resource group
-resource "azurerm_resource_group" "aztf-rg" {
+resource "azurerm_resource_group" "rg" {
   name     = var.rg
   location = var.location
 }
+
