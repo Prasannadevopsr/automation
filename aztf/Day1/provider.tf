@@ -15,11 +15,12 @@ provider "azurerm" {
   features {}
 }
 
-terraform {
-  backend "azurerm" {
-    resource_group_name  = "tfstate-rg"
-    storage_account_name = "tfstatebackend987123"
-    container_name       = "tfstate"
-    key                  = "terraform.tfstate"
-  }
-}
+# backend storage added to store the tfstate file.
+# terraform {
+#   backend "azurerm" {
+#     resource_group_name  = "tfstate-rg"
+#     storage_account_name = "tfstatebackend987123"
+#     container_name       = "tfstate"
+#     key                  = "terraform.tfstate"
+#   }
+# }

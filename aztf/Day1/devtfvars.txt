@@ -1,0 +1,12 @@
+location             = "West Europe"
+rg                   = "terraform-rg"
+vnet_name            = "aztf-rg-vnet"
+vnet_address_space   = ["10.0.0.0/16"]
+
+subnet_name_0        = "subnet-0"
+subnet_name_1        = "subnet-1"
+subnet_name_2        = "subnet-2"
+
+subnet_address_prefix_0 = "10.0.1.0/24"
+subnet_address_prefix_1 = "10.0.2.0/24"
+subnet_address_prefix_2 = "10.0.3.0/24"
